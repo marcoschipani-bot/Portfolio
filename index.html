@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Global Guide</title>
+    <meta name="keywords" content="travel, hotels, resorts, vacation, luxury hotels, where to stay, best hotels, global destinations">
+    <meta name="description" content="Explore the best places to stay worldwide, including luxury hotels, unique resorts, and exclusive travel destinations.">
+    <link rel="icon" href="images/apple-touch-icon.png" type="image/x-icon"> <!-- Link to favicon in images folder -->
+    <link rel="shortcut icon" href="images/apple-touch-icon.png" type="image/x-icon"> 
+    <link rel="icon" sizes="32x32" href="favicon-32x32.png" type="image/png">
+
+    <!-- Import Genos font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Genos&display=swap" rel="stylesheet">
+    <link href="css/project1.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Comfortaa', sans-serif;
+
+
+
+            
+        }
+
+        /* Apply Genos font to header text */
+        h1, h2 {
+            font-family: 'Genos', sans-serif;
+        }
+
+        header {
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        .topnav {
+            display: flex;
+            justify-content: center;
+            background-color: #44576d;    
+        }
+
+        .topnav a {
+            padding: 14px 20px;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            transition: background-color 0.8s ease;
+            font-family: 'Comfortaa', sans-serif;
+
+
+
+        }
+
+        .topnav a:hover {
+            background-color:  #ADD8E6;
+            color:  Black;
+        }
+
+        /* Hamburger menu style */
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #ADD8E6;
+            margin-left: auto;
+            padding: 10px;
+        }
+
+        /* Responsive Navigation */
+        @media (max-width: 768px) {
+            .topnav {
+                display: block;
+                text-align: left;
+                position: relative;
+            }
+
+            .topnav a {
+                display: none; /* Initially hide links */
+                text-align: left;
+                padding: 10px;
+                width: 100%;
+                background-color:  #44576d; /* Full width for dropdown */
+            }
+
+            .hamburger {
+                display: inline-block;
+            }
+
+            .topnav.active a {
+                display: block; /* Show links when active */
+            }
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+            background-image: url('project1/images/earth.jpg'); 
+            background-size: cover;       
+            background-position: center;
+            color: white;               
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            color: #ADD8E6
+        }
+        
+        /* Slideshow specific styles */
+        .slideshow-container {
+            position: relative;
+            max-width: 1000px;
+            margin: 40px auto;
+            overflow: hidden;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .mySlides img {
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .prev {
+            left: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="color: #ADD8E6;">THE GLOBAL GUIDE</h1>
+</header>
+
+<!-- Navigation Menu with Hamburger Icon -->
+<nav id="myTopnav" class="topnav">
+    <span class="hamburger" onclick="toggleMenu()">&#9776;</span>
+    <a href="index.html" class="active">Home</a>
+    <a href="Regions.html">Regions</a>
+    <a href="Travel.html">Flights</a>
+    <a href="Hotels.html">Stays</a>
+</nav>
+
+<main>
+    <h2 style="color: #ADD8E6;">Vicariously Explore The World</h2>
+    <p>From the hustle and bustle of Tokyo to Nova Scotia's,  remote and isolated, Fogo Island; dive deep into The Global Guide’s “Must Visit” destinations of 2024</p>
+    
+    <!-- Slideshow Start -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="images/north.jpg" alt="NYC">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/north2.jpg" alt=CostaRica>
+        </div>
+        <div class="mySlides fade">
+            <img src="images/north7.jpg" alt="Vietnam">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/north3.jpg" alt="Ireland">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/north4.jpg" alt="France">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/north5.jpg" alt="Italy">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/north6.jpg" alt="The Philippines">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/north8.jpg" alt="Japan">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- Dots for slide indicators -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+    </div>
+    <!-- Slideshow End -->
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Marco Schipani</p>
+        <a href="mailto:marc.schipani@gmail.com">marco.schipani@gmail.com</a>
+    </div>
+</footer>
+
+<script>
+    // JavaScript for the hamburger menu
+    function toggleMenu() {
+        var nav = document.getElementById("myTopnav");
+        nav.classList.toggle("active"); // Toggle the 'active' class to show/hide the menu
+    }
+
+    let slideIndex = 0;
+    let slideTimeout;
+
+    showSlides();
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+
+        slideTimeout = setTimeout(showSlides, 7000);
+    }
+
+    function plusSlides(n) {
+        clearTimeout(slideTimeout);
+
+        slideIndex += n - 1;
+        showSlides();
+    }
+
+    function currentSlide(n) {
+        clearTimeout(slideTimeout);
+
+        slideIndex = n;
+        showSlides();
+    }
+</script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

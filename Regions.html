@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Global Regions</title>
+    <meta name="keywords" content="Regions, travel destinations, tourist attractions, world regions, travel regions, vacation areas, adventure, exploration">
+    <link rel="icon" href="images/apple-touch-icon.png" type="image/x-icon"> <!-- Link to favicon in images folder -->
+    <link rel="shortcut icon" href="images/apple-touch-icon.png" type="image/x-icon"> 
+    <link rel="icon" sizes="32x32" href="favicon-32x32.png" type="image/png">
+
+    <!-- Import Genos font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Genos&display=swap" rel="stylesheet">
+    <link href="css/project1.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+   
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('images/Earth12.png'); /* Replace with your image path */
+            background-size: cover;    /* Ensures the background image covers the whole screen */
+            background-position: center; /* Centers the background image */ 
+        }
+
+        /* Apply Genos font to header text */
+        h1, h2, h3 {  /* Added h3 here */
+            font-family: 'Genos', sans-serif;
+        }
+
+        header {
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        /* Navigation Menu Styles */
+        .topnav {
+            display: flex;
+            justify-content: center;
+            background-color: #44576d; 
+            position: relative; /* Position relative for absolute positioning of elements inside */
+        
+        }
+
+        .topnav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            background-color:  #44576d; /* Full width for dropdown */
+            font-family: 'Comfortaa', sans-serif;
+
+
+        }
+
+        .topnav a:hover {
+            background-color:  #ADD8E6;
+            color:  Black;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            color: #ADD8E6;
+            cursor: pointer;
+            top: 1px; /* Adjust as necessary */
+            padding: 1px;
+            margin-left: auto; /* Push hamburger icon to the right */
+        }
+
+        @media (max-width: 768px) {
+            .topnav {
+                flex-direction: column; /* Stack links vertically */
+                text-align: left;
+            }
+
+            .topnav a {
+                display: none; /* Hide links initially */
+                text-align: left;
+                padding: 10px;
+                width: 100%; /* Full width for dropdown */
+            }
+
+            .hamburger {
+                display: inline-block; /* Show hamburger icon */
+            }
+
+            .topnav.active a {
+                display: block; /* Show links when active */
+            }
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+            background-size: cover;      
+            background-position: center; 
+            color: white;                
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: space-around; 
+            margin-top: 20px;
+            height: 70vh; 
+        }
+
+        .box {
+            background-color: #44576d;
+            padding: 20px;
+            border-radius: 8px;
+            width: 30%; 
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; 
+        }
+
+        .box img {
+            width: 100%; 
+            height: 200px; 
+            object-fit: cover;
+            border-radius: 4px; 
+        }
+
+        .box h3 {
+            margin-top: 10px; 
+            margin-bottom: 0; 
+            color: white;
+        }
+
+        .box p {
+            margin-top: -10px; /* Negative margin to pull the paragraph closer to the heading */
+            color: #ddd;
+            text-align: left; /* Aligns all paragraph text to the left */
+        }
+
+        footer {
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            color: #ADD8E6
+        }
+
+        /* Remove underline and set color for the H1 link */
+        header a {
+            text-decoration: none; /* No underline */
+            color: inherit; /* Inherit color from the H1 */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html">
+        <h1 style="color: #ADD8E6;"> Global Regions</h1>
+    </a>
+</header>
+
+<!-- Navigation Menu with Hamburger Icon -->
+<nav id="myTopnav" class="topnav">
+    <span class="hamburger" onclick="toggleMenu()">&#9776;</span>
+    <a href="index.html">Home</a>
+    <a href="Regions.html" class="active">Regions</a>
+    <a href="Travel.html">Flights</a>
+    <a href="Hotels.html">Stays</a>
+</nav>
+
+<main>
+    <h2 style="color: #ADD8E6;">Imagine, Immerse, Inspire</h2>
+    <p class="comfortaa-text">Distinctive Locations, Remarkable Landscapes, Unique Languages</p>
+    
+    <div class="box-container">
+        <div class="box">
+            <img src="images/Earth7.jpg" alt="The Americas"> 
+            <h3>The Americas</h3>
+            <ul>
+                <li><b>Popular Countries:</b> The United States, Canada, Brazil</li>
+                <hr>
+            </ul>
+            <p>Home to many of the world's most diverse countries, The Americas open the door to rich and culturally immersive experiences. Looking for the world's best “food city”? Head to New York City and taste food from 94 different national cuisines. If the hustle and bustle is not for you, head to Fogo Island, Canada, and experience life in a fishing town home to less than 2,500 people. Consider the Americas for your next adventure.</p>
+        </div>
+        <div class="box">
+            <img src="images/Earth6.jpg" alt="Europe"> 
+            <h3>Europe</h3>
+            <ul>
+                <li><b>Popular Countries:</b> Italy, France, Germany, Ireland</li>
+                <hr>
+            </ul>
+            <p>Known as the birthplace of western civilization, Europe is culturally and environmentally diverse with countless ways to make the most of your European journey. Whether you want to explore unique culinary experiences, admire the natural beauty, or immerse yourself in art from the Renaissance, Europe provides something for everyone. Make Europe your next travel destination today.</p>
+        </div>
+        <div class="box">
+            <img src="images/Earth10.jpg" alt="Asia"> 
+            <h3>Asia</h3>
+            <ul>
+                <li><b>Popular Countries:</b> Japan, South Korea, Cambodia</li>
+                <hr>
+            </ul>
+            <p>The world's largest and most populated continent, Asia has both the highest and lowest points on the planet. Home to some of the world's largest cities and most breathtaking natural landscapes, Asia has a destination for everyone. Looking to explore a modern metropolis? Head to Tokyo and immerse yourself in this neon-lit city. Itching to unwind on the coast of the South China Sea? Head to Nha Trang, Vietnam, and live like a local.</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Marco Schipani</p>
+        <a href="mailto:marc.schipani@gmail.com">marco.schipani@gmail.com</a>
+    </div>
+</footer>
+
+<script>
+    // JavaScript for the hamburger menu
+    function toggleMenu() {
+        var nav = document.getElementById("myTopnav");
+        nav.classList.toggle("active"); // Toggle the 'active' class to show/hide the menu
+    }
+</script>
+
+</body>
+</html>

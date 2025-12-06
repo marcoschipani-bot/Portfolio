@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Where to Stay</title>
+    <meta name="keywords" content="Hotels, accommodation, lodging, travel hotels, luxury hotels, budget hotels, hotel booking, travel stays, hospitality, vacation rentals">
+    <link rel="icon" href="images/apple-touch-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/apple-touch-icon.png" type="image/x-icon"> 
+    <link rel="icon" sizes="32x32" href="favicon-32x32.png" type="image/png">
+
+    <!-- Import Genos font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Genos&display=swap" rel="stylesheet">
+    <link href="css/project1.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <style>
+        /* Your existing CSS styles remain unchanged */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif; 
+            background-image: url('images/Earth12.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Genos', sans-serif;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #44576d;
+            position: relative;
+        }
+
+        nav a, .topnav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            background-color: #44576d;
+            font-family: 'Comfortaa', sans-serif;
+        }
+
+        nav a:hover {
+            background-color: #ADD8E6;
+            color: black;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            color: #ADD8E6;
+            cursor: pointer;
+            position: absolute;
+            right: 15px;
+            top: 1px;
+            padding: 1px;
+        }
+
+        header a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                display: none; /* Hide menu items by default */
+            }
+
+            nav.responsive a {
+                display: block; /* Show menu items when the menu is responsive */
+                width: 100%;
+                text-align: left;
+                height: 100%;
+            }
+
+            .hamburger {
+                display: inline-block; /* Show hamburger icon */
+            }
+
+            nav {
+                flex-direction: column;
+            }
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            height: 100%;
+        }
+
+        .box {
+            background-color: #44576d;
+            padding: 20px;
+            border-radius: 8px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .box h4 {
+            margin-top: 10px;
+            margin-bottom: 0;
+            color: white;
+        }
+
+        .box ul {
+            text-align: left;
+            color: #ddd;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            color: #ADD8E6;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html">
+        <h1 style="color: #ADD8E6;">Where to Stay</h1>
+    </a>
+</header>
+
+<nav id="myTopnav">
+    <a href="index.html" rel="noopener noreferrer">Home</a>
+    <a href="Regions.html" rel="noopener noreferrer">Regions</a>
+    <a href="Travel.html" rel="noopener noreferrer">Flights</a>
+    <a href="Hotels.html" class="active" rel="noopener noreferrer">Stays</a>
+    <span class="hamburger" onclick="toggleMenu()">&#9776;</span>
+</nav>
+
+<main>
+    <h2 style="color: #ADD8E6;">Stressing Over Where to Stay?</h2>
+    <p class="comfortaa-text">Let Us Help</p>
+    
+    <div class="box-container">
+        <div class="box">
+            <a href="https://fogoislandinn.ca/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                <img src="images/north1.jpg" alt="The Fogo Island Inn">
+            </a>
+            <h3>Property Highlight <i>(The Americas)</i></h3>
+            <h4><a href="https://fogoislandinn.ca/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">The Fogo Island Inn, Canada</a></h4>
+            <hr>
+            <ul>
+                <li><b>Price <i>(Per Night):</i></b> Starting at $1,296.45</li>
+                <li><b>Rating:</b> Relais & Châteaux</li>
+                <li><b>Amenities:</b> Food and excursions are included in the nightly room rate. Guests receive a complimentary car to use during their stay or can opt to have a chauffeur.</li>
+            </ul>
+        </div>
+        <div class="box">
+            <a href="https://www.rosewoodhotels.com/en/london" target="_blank" rel="noopener noreferrer">
+                <img src="images/north12.webp" alt="The Rosewood Property Entrance">
+            </a>
+            <h3>Property Highlight <i>(Europe)</i></h3>
+            <h4><a href="https://www.rosewoodhotels.com/en/london" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">The Rosewood, London</a></h4>
+            <hr>
+            <ul>
+                <li><b>Price <i>(Per Night):</i></b> Starting at $697.00</li>
+                <li><b>Rating:</b> 5 Star Hotel</li>
+                <li><b>Amenities:</b> Guests can choose between 6 restaurants and may receive spa treatments at an additional cost. All rooms have access to 24/hr room service in addition to a butler service.</li>
+            </ul>
+        </div>
+        <div class="box">
+            <a href="https://mukayu.com/english/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                <img src="images/north13.jpg" alt="Beniya Mukayu, Kaga-shi, Japan"> 
+            </a>
+            <h3>Property Highlight <i>(Asia)</i></h3>
+            <h4><a href="https://mukayu.com/english/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Beniya Mukayu, Kaga-shi, Japan</a></h4>
+            <hr>
+            <ul>
+                <li><b>Price <i>(Per Night):</i></b> Starting at $641.00</li>
+                <li><b>Rating:</b> Relais & Châteaux</li>
+                <li><b>Amenities:</b> Guests have access to a Buddhist Temple, 2 hot springs, and 3 libraries. All rooms are stocked with the finest Japanese toiletries and luxury bedding. This property offers a fine-dining restaurant that overlooks the grounds luscious Forest Garden.</li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Marco Schipani</p>
+        <a href="mailto:marc.schipani@gmail.com">marco.schipani@gmail.com</a>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        var nav = document.getElementById("myTopnav");
+        nav.classList.toggle("responsive"); // Change 'active' to 'responsive'
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Getting There</title>
+    <meta name="keywords" content="Travel, travel tips, destinations, travel guides, adventure, tourism, vacation planning, travel font-family: Cambria, Times, 'Times New Roman', serif, sans-serif;
+experiences, world travel, global exploration">
+    <link rel="icon" href="images/apple-touch-icon.png" type="image/x-icon"> <!-- Link to favicon in images folder -->
+    <link rel="shortcut icon" href="images/apple-touch-icon.png" type="image/x-icon"> 
+    <link rel="icon" sizes="32x32" href="favicon-32x32.png" type="image/png">
+
+    <!-- Import Genos font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Genos&display=swap" rel="stylesheet">
+    <link href="css/project1.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif; 
+            background-image: url('images/Earth12.png'); /* Replace with your image path */
+            background-size: cover;    /* Ensures the background image covers the whole screen */
+            background-position: center; /* Centers the background image */ 
+        }
+
+        /* Apply Genos font to header text */
+        h1, h2, h3, h4 {
+            font-family: 'Genos', sans-serif; /* Added h4 here */
+        }
+
+        header {
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #44576d; 
+            position: relative; /* Enable absolute positioning for the hamburger */
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            font-family: 'Comfortaa', sans-serif;
+        }
+
+        nav a:hover {
+            background-color:  #ADD8E6;
+            color:  Black;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            color: #ADD8E6;
+            cursor: pointer;
+            position: absolute; /* Position hamburger icon */
+            right: 15px; /* Adjust as necessary */
+            top: 1px; /* Adjust as necessary */
+            padding: 1px;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                display: none; /* Hide links initially */
+            }
+
+            nav.responsive a {
+                display: block; /* Show links when responsive */
+                width: 100%; /* Full width for dropdown */
+                text-align: left; /* Align text to the left */
+            }
+
+            .hamburger {
+                display: inline-block; /* Show hamburger icon */
+            }
+
+            nav {
+                flex-direction: column; /* Stack links vertically */
+            }
+
+        .topnav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            background-color:  #44576d; /* Full width for dropdown */
+
+
+        }
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+            background-size: cover;      
+            background-position: center; 
+            color: white;                
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: space-around; 
+            margin-top: 20px;
+            height: 100%; 
+        }
+
+        .box {
+            background-color: #44576d;
+            padding: 20px;
+            border-radius: 8px;
+            width: 30%; 
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; 
+        }
+
+        .box h3 {
+            margin-top: 10px; 
+            margin-bottom: 0; 
+            color: white;
+        }
+
+        .box p, .box ul {
+            color: #ddd;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            color: #ADD8E6
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1><a href="index.html" style="color: #ADD8E6; text-decoration: none;">Getting There</a></h1>
+</header>
+
+<nav id="myTopnav" class="topnav">
+    <a href="index.html">Home</a>
+    <a href="Regions.html">Regions</a>
+    <a href="Travel.html" class="active">Flights</a>
+    <a href="Hotels.html">Stays</a>
+    <span class="hamburger" onclick="toggleMenu()">&#9776;</span>
+</nav>
+
+<main>
+    <h2 style="color: #ADD8E6;">Travel Can Be Stressful</h2>
+    <p class="comfortaa-text">Let Us Do The Heavy Lifting</p>
+    
+    <div class="box-container">
+        <div class="box">
+            <h3>Getting to The Americas</h3>
+            <p><b>Hubs In Europe:</b> Flying to destinations across North, Central, or South America can be easily facilitated through one of the many European hubs. Daily non-stop flights are offered by budget and premium carriers from major European cities to major North and South American cities including Sao Paulo and Tamarindo.</p>
+            <p><b>Hubs In Asia:</b> Getting to the Americas from Asia will be exhausting but non-stop flights are offered from many major cities. Some frequented flights from Asia to the Americas include Tokyo-New York, Singapore-Los Angeles, and Hong Kong-New-York. Several budget and premium carriers offer flights to South America mostly headed for Brazil specifically, Sao Paulo or Rio de Janeiro.</p>
+            <h4>Pricing Options<i> (London-New York)</i></h4>
+            <ul>
+                <li><b>Budget:</b> London, Heathrow-New-York, John F. Kennedy $450.00 Via <a href="https://www.flytap.com/en-us/" target="_blank" style="color: inherit; text-decoration: underline;">Tap Air Portugal</a> (1 stop)</li>
+
+                <li><b>Convenience:</b> London, Gatwick-New-York, John F. Kennedy $575.00 Via <a href="https://www.britishairways.com/travel/home/public/en_us/" target="_blank" style="color: inherit; text-decoration: underline;">British Airways</a> (Non-stop)</li>
+
+                <li><b>Premium:</b> <a href="https://www.netjets.com/en-us/" target="_blank" style="color: inherit; text-decoration: underline;">NetJets</a>, London-New York starting at $50,000 (Any airports)</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Getting to Europe</h3>
+            <p><b>Hubs In The Americas:</b> Flying to destinations across Europe can be easily facilitated through one of the many American hubs. Daily non-stop flights are offered by various carriers from major American cities to major European cities. Non-stop flights to France are accessible through major hubs, including New York's JFK, Chicago O'Hare, or Atlanta.</p>
+            <p><b>Hubs In Asia:</b> Getting to Europe from Asia can be demanding, but non-stop flights are available from many major cities. Some popular routes from Asia to Europe include Tokyo-London, Singapore-Paris, and Hong Kong-Frankfurt. Several carriers offer flights to Southern Europe, often headed to Spain or Italy, specifically Madrid or Rome.</p>
+            <h4>Pricing Options<i> (Shanghai-Paris)</i></h4>
+            <ul>
+                <li><b>Budget:</b> Shanghai, Hongquiao-Paris, CDG $1,116 Via Multiple Airlines (2 Stops)</li>
+                <li><b>Convenience:</b> Shanghai, Pudong-Paris, CDG $1,360.00 Via <a href="https://wwws.airfrance.us/" target="_blank" style="color: inherit; text-decoration: underline;">Air France</a> (Nonstop)</li>
+
+                <li><b>Premium:</b> <a href="https://www.netjets.com/en-us/" target="_blank" style="color: inherit; text-decoration: underline;">NetJets</a>, Shanghai-Paris starting at $125,000 (Any Airports)</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Getting to Asia</h3>
+            <p><b>Hubs In The Americas:</b> Flying to destinations across Asia can be easily facilitated through one of the many American hubs. Daily non-stop flights are offered by various budget and premium carriers from major American cities to major Asian cities. Non-stop flights to Asia are accessible through major hubs, including New York's JFK, Chicago O'Hare, or Atlanta Hartsfield-Jackson.</p>
+            <p><b>Hubs In Europe:</b> Getting to Asia from Europe can be demanding, but non-stop flights are available from many major cities. Some popular routes from Asia to Europe include Tokyo-London, Singapore-Paris, and Hong Kong-Frankfurt. Several carriers offer flights to Southern Europe, often headed to Spain or Italy, specifically Madrid or Rome.</p>
+            <h4>Pricing Options<i> (San Francisco-Tokyo)</i></h4>
+            <ul>
+                <li><b>Budget:</b> San Francisco, SFO-Tokyo, Narita $850.00 Via Multiple Airlines (1 Stop)</li>
+                <li><b>Convenience:</b> San Francisco, SFO-Tokyo, Narita $1,000.00 Via <a href="https://www.jal.co.jp/en/"  target="_blank" style="color: inherit; text-decoration: underline;">Japan Airlines</a> (Non-stop)</li>
+                <li><b>Premium:</b> <a href="https://www.netjets.com/en-us/" target="_blank" style="color: inherit; text-decoration: underline;">NetJets</a>, San Francisco-Tokyo starting at $80,000 (Any Airports)</li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Marco Schipani</p>
+        <a href="mailto:marc.schipani@gmail.com">marco.schipani@gmail.com</a>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        var nav = document.getElementById("myTopnav");
+        nav.classList.toggle("responsive");
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,331 @@
+/* Global Styles */
+/* Global Styles */
+body {
+    font-family: 'Cambria', serif; /* Set Cambria as the primary font */
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    background-image: url(../images/earth1.jpg);
+    background-size: cover;
+}
+
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Increase font sizes for Genos font */
+h1 {
+    font-size: 2.5em; /* Adjust as needed */
+}
+
+h2 {
+    font-size: 2em; /* Adjust as needed */
+}
+
+h3 {
+    font-size: 1.5em; /* Adjust as needed */
+}
+
+h4 {
+    font-size: 1.2em; /* Adjust as needed */
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 14px;
+    color: #44576d;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #44576d;
+}
+
+nav a {
+    color: white; /* Maintain white color for links */
+    padding: 14px 20px;
+    text-decoration: underline; /* Underline links */
+    text-align: center;
+    transition: background-color 0.8s ease;
+}
+
+nav a:hover {
+    background-color: #ADD8E6;
+    color:  black;
+}
+
+/* Active link style */
+nav a.active {
+    background-color: #ADD8E6; /* Highlight color for active link */
+    color: black; /* Text color for active link */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    color: white;
+    margin-top: -20px; /* Shift main content up more */
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 70vh;
+    margin-top: 20px;
+    gap: 20px; /* Adds space between boxes */
+}
+
+.box {
+    background-color: #44576d;
+    padding: 20px;
+    border-radius: 8px;
+    width: 25%; /* Slightly smaller width */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 10px; /* Add horizontal margins to space out boxes */
+}
+
+.box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.box h3 {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.box h4 {
+    font-size: 1.2em; /* Keep or adjust as needed */
+    margin-top: 10px; /* Decreased space above the pricing options */
+    margin-bottom: 5px; /* Decreased space below the pricing options */
+}
+
+.box p {
+    color: #ddd;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.box ul {
+    list-style-type: square;
+    text-align: left;
+    padding-left: 0;
+    margin-top: 5px; /* Decreased space above the list items */
+}
+
+li {
+    margin: 0;
+    padding: 5px 0;
+}
+
+/* Link Styles */
+a {
+    color: inherit; /* Inherit color from surrounding text */
+    text-decoration: underline; /* Underline links */
+}
+
+
+    
+
+
+/* Horizontal Rule Style */
+hr {
+    border: none;             /* Remove default border */
+    height: 1px;             /* Set the height for the line */
+    background-color: white; /* Set the color of the line */
+    width: 100%;             /* Make it full width */
+    margin: 20px 0;          /* Add some vertical space around the line */
+}
+
+/* Footer Styles */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 0; /* Keeps the padding minimal */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 40px; /* Fixed height to maintain size */
+    font-family: 'Genos', sans-serif; /* Apply Genos font */
+}
+
+.footer-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 100%; /* Ensure it takes the full height of the footer */
+}
+
+.footer-content p {
+    margin: 0; /* Remove default margin */
+    padding-right: 10px; /* Space between copyright and email */
+}
+
+.footer-content a {
+    color: #ADD8E6; /* Email link color */
+    text-decoration: underline; /* Underline for email link */
+    background-color: black; /* Set background color same as footer */
+}
+
+.footer-content a:hover {
+    text-decoration: underline; /* Maintain underline on hover for email */
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: 40px auto;
+    height: 400px;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+    height: 100%;
+}
+
+.mySlides img {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #44576d;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    nav a {
+        padding: 10px;
+        background-color: #ddd;
+        color: black;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+  
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+        margin-top: -20px; /* Shift main content up more */
+  
+    }
+
+    .box-container {
+        flex-direction: column; /* Stack boxes vertically */
+        width: 100%; /* Ensures the container is full width */
+ 
+    }
+
+    .box {
+        width: 100% !important; /* Make boxes take full width */
+        margin: 10px 0; /* Adds space above and below each box */
+  
+    }
+}
+.comfortaa-text {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+@media (max-width: 480px) {
+    .box-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%; /* Ensures the container is full width */
+ 
+
+    }
+
+    .box {
+        width: 100% !important; /* Make boxes take full width */
+        height: auto; /* Adjust height automatically */
+        margin-bottom: 20px; /* Adds space between stacked boxes */
+      
+    }
+
+    .prev, .next {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
